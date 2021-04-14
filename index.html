@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ammbr</title>
+
+    <!-- CSS -->
+    <link href="assets/css/fonts/fontawesome/all.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Fonts -->
+    <link href="assets/css/fonts/theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&display=swap" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-affix fadeInDown ad-700ms">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent">
+          <span class="icon-menu menu__btn menu-dark"></span>
+        </button>
+        <div class="order-lg-2 flex-lg-1 pl-3 mr-sm-auto mx-lg-auto text-center">
+          <a class="navbar-brand logo" href="index.html">
+            <img src="assets/img/logo.png" alt="Ammbr" class="logo-dark">
+            <img src="assets/img/logo.png" alt="Ammbr" class="logo-light">
+          </a>
+        </div>
+        <nav class="nav_cfw d-none d-sm-flex nav navbar-nav flex-row order-lg-3 justify-content-end">
+          <a class="nav-link text-primary" href="#" data-toggle="modal" data-target="#download">
+            <span class="td-ure">Go To App</span>
+          </a>
+          <a class="nav-link px-3" href="#" data-toggle="modal" data-target="#contactUs"><i class="fas fa-envelope mr-1"></i></a>
+          <a class="nav-link px-3" href="#" data-toggle="modal" data-target="#faq"><i class="fas fa-question"></i></a>
+        </nav>
+        <div class="nav_cfw order-lg-1 flex-grow-0 offcanvas-md" data-animation="slideLeft" id="navbarSupportedContent">
+          <button type="button" class="close fw-100 d-lg-none" data-toggle="offcanvas-close" aria-label="Close">
+            <span class="icon-close closeMenu__btn menu-dark"></span>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-scroll="#nft">NFTs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll="#swap">Swap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll="#farming">Farming</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- main -->
+    <main>
+
+      <!-- header -->
+      <header id="header" class="header bg-dark bg-animation-scene" data-wrapper="letters-effect">
+        <div class="h_shape overlay ad-400ms"><img src="assets/img/shape/h_shape.png" alt="Shape" class="parallax-img heroSMG" data-parallax="true"></div>
+        <canvas class="scene scene-full o-5" id="scene" data-animated-background="effect-4"></canvas>
+        <div class="d-none d-xl-block pe-n position-absolute l--13 b--12 o-30">
+          <img src="assets/img/shape/circle_shape.png" class="parallax-img p-9" data-parallax="true" alt="Shape">
+        </div>
+        <div class="d-none d-xl-block pe-n position-absolute r--13 t-3 o-30">
+          <img src="assets/img/shape/circle_shape.png" class="parallax-img p-9" data-parallax="true" alt="Shape">
+        </div>
+        <div class="overlay d-flex align-items-center">
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="hero-title">
+                  <h2 data-letters-word="Defi" class="word lh-1 letter-effect-space-2" data-letters-effect="10" data-letters-size="110" data-letters-weight="5" data-letters-color="#3a3a3a" data-letters-duration="2"></h2>
+                  <div class="fadeIn ad-1500ms">
+                    <p class="lead-md-1 fw-500 mb-7">Ammbr offers a comprehensive decentralised finance platform with low gas and transaction fees.</p>
+                    <a data-scroll="#nft" class="btn btn-circle btn-light shadow-2 btn-round">
+                      <span class="icon-arrow-down text-primary lead-2" style="margin-left: 2px;"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block pe-n hero-img-wrapperA position-absolute absolute-center-X" style="bottom: -50px;">
+          <div class="hero-img">
+            <img src="assets/img/app/hero-img.png" class="parallax-img p-9" alt="AmmbrSwap" data-parallax="true">
+          </div>
+        </div>
+      </header>
+      <!-- /.header -->
+
+      <!-- NFT-section -->
+      <section id="nft" class="content-section overflow-hidden">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-8 col-lg-5 col-lp-6 ml-auto mr-auto ml-lg-0 mb-8 mb-lg-0 pl-lg-0 pr-xl-12">
+              <div class="pe-n position-relative gray-box-gr ar-1_1 rounded-circle">
+                <div class="position-absolute absolute-center-Y r-13 mr-6 r-xl--9 mr-lg--13">
+                  <img src="assets/img/fx/pattern_01.png" alt="Img">
+                </div>
+                <div class="pe-n position-absolute absolute-center absolute-center-xl-Y l-xl-auto r-xl--9">
+                  <video class="media-app d-block w-100" autoplay="autoplay" loop="loop" muted="muted" data-video="progress">
+                    <source src="assets/media/app_video.mp4" type="video/mp4">
+                    Video tag not supported.
+                  </video>
+                  <div class="media-progress-wrapper progress position-absolute b-0">
+                    <div class="media-prog progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-lp-5 ml-auto">
+              <div class="pl-md-10 pr-md-8">
+                <div class="aos-init zi-1" data-aos="fade" data-aos-delay="50" data-aos-once="false">
+                  <svg height="150" width="200" stroke="#dbdee1" stroke-width="2" class="text-dshAim mb--9 ml--4 ml-md--10">
+                    <text style="font-family: 'Istok Web', sans-serif; font-weight: 800;" x="23" y="125" fill="none" font-size = "150">01</text>
+                  </svg>
+                </div>
+                <div class="px-8 px-lg-0">
+                  <div class="aos-init zi-2 position-relative mb-8" data-aos="slideUp" data-aos-delay="50">
+                    <h2 class="display-md-4 display-xl-3 display-lp-1 lh-1 fw-800 text-primary mb-4 mb-xl-2">NFTs</h2>
+                    <h2 class="lh-1">Tokenized Assets</h2>
+                  </div>
+                  <div class="aos-init" data-aos="slideUp" data-aos-delay="100">
+                    <p class="lead-md-2 fw-500">Creating tradeable representations of assets registered immutably and transparently on the Blockchain.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content-section -->
+
+      <!-- swap-section -->
+      <section id="swap" class="content-section overflow-hidden">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-8 mb-lg-0 ml-auto pr-md-0 order-lg-2">
+              <div class="position-relative gray-box-gr ar-1_1">
+                <div class="pe-n position-absolute t-8 l-12 ml-4">
+                  <img src="assets/img/fx/pattern_01.png" alt="Img">
+                </div>
+                <div class="position-absolute b-8 r-0 l-0 l-lg--9 text-center text-lg-left">
+                  <img src="assets/img/app/a_02.png" class="app-img w-100 parallax-img p-9" data-parallax="true" alt="Img">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-lp-6 pl-md-10 order-lg-1">
+              <div class="pr-xl-7 pr-lp-10 pl-xl-8">
+                <div class="aos-init zi-1" data-aos="fade" data-aos-delay="50" data-aos-once="false">
+                  <svg height="150" width="200" stroke="#dbdee1" stroke-width="2" class="text-dshAim mb--9 ml--4 ml-md--10">
+                    <text style="font-family: 'Istok Web', sans-serif; font-weight: 800;" x="23" y="125" fill="none" font-size = "150">02</text>
+                  </svg>
+                </div>
+                <div class="px-8">
+                  <div class="aos-init zi-2 position-relative mb-8" data-aos="slideUp" data-aos-delay="50">
+                    <h2 class="display-md-4 display-xl-3 display-lp-1 lh-1 fw-800 text-primary mb-4 mb-xl-2">Swap</h2>
+                    <h2 class="lh-3">Swapping Assets Conveniently</h2>
+                  </div>
+                  <div class="aos-init" data-aos="slideUp" data-aos-delay="100">
+                    <p class="lead-md-2 fw-500">AmmbrSwap lets you exchange, buy and sell crypto assets cross-chain, for low gas and transaction fees, using your own wallet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content-section -->
+
+      <!-- farming-section -->
+      <section id="farming" class="content-section overflow-hidden">
+        <div class="content-section bg-gray py-0 mt-lp-12 pb-13">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-lp-5 pl-lp-0 pr-lg-9 pr-xl-10">
+                <div class="position-relative app-b-lg">
+                  <div class="pe-n position-absolute absolute-center-Y r--9 mr--13">
+                    <img src="assets/img/fx/pattern_01.png" alt="Img">
+                  </div>
+                  <div class="position-lg-absolute text-center t--10 r-lg--9">
+                    <img src="assets/img/app/a_01.png" class="app-img w-100 parallax-img p-9" data-parallax="true" alt="Img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-lp-6 ml-auto">
+                <div class="pl-md-10 pr-md-8 py-lg-10">
+                  <div class="aos-init zi-1" data-aos="fade" data-aos-delay="50" data-aos-once="false">
+                    <svg height="150" width="200" stroke="#dbdee1" stroke-width="2" class="text-dshAim mb--9 ml--4 ml-md--10">
+                      <text style="font-family: 'Istok Web', sans-serif; font-weight: 800;" x="23" y="125" fill="none" font-size = "150">03</text>
+                    </svg>
+                  </div>
+                  <div class="px-8">
+                    <div class="aos-init zi-2 position-relative mb-8" data-aos="slideUp" data-aos-delay="50">
+                      <h2 class="display-md-4 display-xl-3 display-lp-1 lh-1 fw-800 text-primary mb-4 mb-xl-2">Yield Farming</h2>
+                      <h2 class="lh-3">Maximize yield from your crypto assets</h2>
+                    </div>
+                    <div class="aos-init" data-aos="slideUp" data-aos-delay="100">
+                      <p class="lead-md-2 fw-500">Ammbr Decentralized Finance opens up a plethora of opportunities from profiting from synthetic assets, leveraged trade, trade finance, and much more.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content-section -->
+
+      <!-- Infra-section -->
+      <section id="infra" class="content-section bg-dark mx-4 mx-md-6 mt--10 rounded-4">
+        <div class="bs-c bp-c br-n" style="background: url(assets/img/bg/bg-dark-shape.png);">
+          <div class="container-fluid pt-8 pt-lg-12">
+            <div class="row align-items-center">
+              <div class="col-md-10 col-xl-8 col-lp-6 mx-auto">
+                <div class="pl-md-10 pr-md-4 pl-lg-9 pr-lg-8">
+                  <div class="aos-init zi-1" data-aos="fade" data-aos-delay="50" data-aos-once="false">
+                    <svg height="150" width="200" stroke="#655e5e" stroke-width="2" class="text-dshAim mb--9 ml--4 ml-md--10">
+                      <text style="font-family: 'Istok Web', sans-serif; font-weight: 800;" x="23" y="125" fill="none" font-size = "150">04</text>
+                    </svg>
+                  </div>
+                  <div class="px-6 px-sm-8">
+                    <div class="aos-init zi-2 position-relative mb-8" data-aos="slideUp" data-aos-delay="50">
+                      <h2 class="display-md-4 display-xl-3 display-lp-1 lh-1 fw-800 text-light mb-6">Scalable and Cross-Chain Infrastructure.</h2>
+                      <h2 class="lh-1 text-primary">Efficient L2 Cross-chain swaps at speed</h2>
+                    </div>
+                    <div class="aos-init" data-aos="slideUp" data-aos-delay="100">
+                      <p class="lead-md-2 text-gray fw-600 mb-0">Leveraging our experience in mesh networks, we are building an enteprise crypto finance platform that achieves the decentralized objectives of fairness, security and accessibility for all.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row mt-9 text-light">
+            <div class="col-md-11 col-lg-10 col-xl-8 col-lp-5 mx-auto">
+              <div class="row">
+                <div class="col-md-6 mb-8 mb-md-9">
+                  <div class="px-6 px-sm-8 px-lg-0 pl-lp-8 pr-md-6">
+                    <div class="mb-5">
+                      <img src="assets/img/icon/icon-token.svg" class="img-md" alt="tokenization">
+                    </div>
+                    <h4>Tokenisation</h4>
+                    <p class="fw-600 text-gray mb-0">Tokenised assets offer tremendous flexibility in the use, leverage and trade of assets to their owners.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-8 mb-md-9">
+                  <div class="px-6 px-sm-8 px-lg-0 pl-lp-8 pr-md-6">
+                    <div class="mb-5">
+                      <img src="assets/img/icon/icon-interoperability.svg" class="img-md" alt="interoperability">
+                    </div>
+                    <h4>Pervasiveness</h4>
+                    <p class="fw-600 text-gray mb-0">User experience and usefullness are enhanced by embedding asset access and functionality into the Web.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-8 mb-md-0">
+                  <div class="px-6 px-sm-8 px-lg-0 pl-lp-8 pr-md-6">
+                    <div class="mb-5">
+                      <img src="assets/img/icon/icon-transparency.svg" class="img-md" alt="transparency">
+                    </div>
+                    <h4>Transparency</h4>
+                    <p class="fw-600 text-gray mb-0">Governance and fairness require levels of transparency never before experienced.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-8 mb-md-10">
+                  <div class="px-6 px-sm-8 px-lg-0 pl-lp-8 pr-md-6">
+                    <div class="mb-5">
+                      <img src="assets/img/icon/icon-security.svg" class="img-md" alt="security">
+                    </div>
+                    <h4>Security</h4>
+                    <p class="fw-600 text-gray mb-0">Underpinned by sophisticated cryptography, your private keys, held in your own wallet, ensure the highest degree of non-custodial security.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="px-6 px-sm-8 px-lg-0 pl-lp-8 pr-md-6">
+                    <p class="lead-md-2 text-gray fw-600 mb-0">Join us on our journey to democratise the Web and Finance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- /.content-section -->
+
+      <!-- Overflow-section -->
+      <section id="overflow-hidden" class="content-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-11 col-lg-9 col-xl-8 mx-auto pl-xl-11">
+              <div class="row align-items-center">
+                <div class="col-md-5 col-xl-6">
+                  <h2 class="display-lg-4 fw-600 lh-2 mb-1 mb-md-0">Simple NFT Management</h2>
+                </div>
+                <div class="col-md-7 col-xl-6">
+                  <h6 class="small-2 text-uppercase fw-600 ls-2 mb-6">Consider the user</h6>
+                  <p class="lead-md-2 lh-6 fw-600 mb-0">Our NFT platform makes it easy to create, display, market and sell your digitised assets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center mt-10">
+            <div class="col-xl-8 mx-auto">
+              <div>
+                <div id="select-color_01" class="row align-items-center">
+                  <div class="col-12">
+                    <div class="row no-gutters align-items-center justify-content-end">
+                      <ul class="col-lg-auto theme-tab-nav nav nav-pills color-selector justify-content-center flex-lg-column mb-8 mb-lg-0 ml-6 ml-xl-0 mr-lg-8">
+                        <li class="theme-tab-item active">
+                          <a href="#c-01" class="active show" data-toggle="tab">
+                            <img src="assets/img/icon/1.png" alt="One">
+                          </a>
+                        </li>
+                        <li class="theme-tab-item">
+                          <a href="#c-02" data-toggle="tab">
+                            <img src="assets/img/icon/2.png" alt="Two">
+                          </a>
+                        </li>
+                        <li class="theme-tab-item">
+                          <a href="#c-03" data-toggle="tab">
+                            <img src="assets/img/icon/3.png" alt="Three">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="col tab-content">
+                        <div class="tab-pane active show" id="c-01">
+                          <div class="row align-items-center">
+                            <div class="col-5 col-xl-6 mb-8 mb-xl-0 text-center"><img src="assets/img/device/mint.png" class="tab-img-size" alt="mint"></div>
+                            <div class="col-lg-6">
+                              <h2 class="lh-2 fw-600 mb-6"><span class="text-primary">Mint NFTs</span> as the first step.</h2>
+                              <p class="lead-md-1 fw-500 mb-0">Connect your wallet, and enter relevant information about the asset. Upload the graphic representing the asset, and submit it for processing.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="c-02">
+                          <div class="row align-items-center">
+                            <div class="col-5 col-xl-6 mb-8 mb-xl-0 text-center"><img src="assets/img/device/gallery.png" class="tab-img-size" alt="gallery"></div>
+                            <div class="col-lg-6">
+                              <h2 class="lh-2 fw-600 mb-6"><span class="text-primary">NFT Gallery</span> displaying NFTs listed on the platform, including your own.</h2>
+                              <p class="lead-md-1 fw-500 mb-0">Browse NFTs, and clicking on an asset will take you to a detailed page .</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="c-03">
+                          <div class="row align-items-center">
+                            <div class="col-5 col-xl-6 mb-8 mb-xl-0 text-center"><img src="assets/img/device/single.png" class="tab-img-size" alt="single"></div>
+                            <div class="col-lg-6">
+                              <h2 class="lh-2 fw-600 mb-6"><span class="text-primary">Detailed Display</span> shows the asset, its description and more about it.</h2>
+                              <p class="lead-md-1 fw-500 mb-0">If an option has been selected by the owner allowing auction bids on outright sale of the asset you can acquire it.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content-section -->
+
+      <!-- content-section -->
+      <section class="position-relative content-section bg-dark text-center overflow-hidden">
+        <div class="o-20">
+          <div class="overlay bs-c br-n bp-c aos-init" data-aos="fade" data-aos-delay="50" style="background: url(assets/img/bg/getApp.jpg);"></div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10 col-lg-6 mx-auto">
+              <h2 class="text-primary mb-5 fw-700">Ready to try?</h2>
+              <h4 class="text-light fw-200">Our application operates on Binance Smart Chain (BSC) for lower gas fees, but you can move your ERC-20 . You can also use the cross-platform version. Use our application for free by clicking the button below.</h4>
+              <a href="#" data-toggle="modal" data-target="#download" class="btn btn-lg btn-light btn-round lead-1 fw-700 mt-8">Get Ammbr</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content-section -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row gutters-y align-items-center">
+            <div class="col-6 col-lg">
+              <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Ammbr" class="logo-dark"></a>
+            </div>
+            <div class="col-6 col-lg-3 text-right order-lg-last">
+              <a href="" class="nav-link fw-600">Ammbr Finance © 2021</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /.footer -->
+
+    </main>
+    <!-- /.main -->
+
+    <!-- download-modal -->
+    <div class="modal fade" id="download" tabindex="-1" role="dialog" aria-labelledby="downloadTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-7">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="icon-close" aria-hidden="true"></span>
+            </button>
+            <div class="py-6 text-center">
+              <h1 class="fw-600 mb-1" id="downloadTitle">Get Ammbr Now:</h1>
+              <p class="lead-1 mb-7">Your Decentralised Finance Platform — no middlemen</p>
+              <div class="row">
+                <div class="col-sm-8 mx-auto col-lg-12">
+                  <a href="https://www.ammbr.com" class="btn-download mx-4"><img src="assets/img/app/ammbr-web.png" alt="Ammbr Web"></a>
+                  <a href="https://app.ammbr.finance" class="btn-download mx-4"><img src="assets/img/app/ammbr-app.png" alt="Ammbr App"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.download-modal -->
+
+    <!-- contact-modal -->
+    <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="row no-gutters">
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="d-flex align-items-center h-100 text-light bs-c br-n" style="background: url(assets/img/bg/bg_ofi.jpg);" data-overlay="8">
+                <ul class="list-unstyled position-relative px-6">
+                  <li class="mb-6">
+                    <div class="d-flex lh-1">
+                      <div class="mr-3">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div>
+                        <h5 class="lh-1 mb-1">Phone</h5>
+                        <span class="text-success fw-600 small">+1 516 5540922</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-6">
+                    <div class="d-flex lh-1">
+                      <div class="mr-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div>
+                        <h5 class="lh-1 mb-1">Address</h5>
+                        <span class="text-success fw-600 small">Ammbr Limited</br>
+                          Wework X Hub71</br>
+                          Al Khatem Tower</br>
+                          ADGM Square</br>
+                          Abu Dhabi</br>
+                          United Arab Emirates</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex lh-1">
+                      <div class="mr-3">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div>
+                        <h5 class="lh-1 mb-1">E-mail</h5>
+                        <span class="text-success fw-600 small lh-5">info@ammbr.com</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-header border-bottom-0 pb-0">
+                <h3 class="modal-title fw-600" id="contactTitle">Contact Us</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><span class="icon-close lead-2"></span></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="input-rounded">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input class="form-control form-control-lg" type="text" name="name" placeholder="Your Name" required="">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input class="form-control form-control-lg" type="email" name="email" placeholder="Your Email Address" required="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input name="subject" type="text" class="form-control" placeholder="Subject" required="">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message" name="message" required=""></textarea>
+                  </div>
+                  <button class="btn btn-lg btn-round btn-primary" type="submit">Send it over</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.contact-modal -->
+
+    <!-- faq-modal -->
+    <div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="faqTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content p-4">
+          <div class="modal-header border-bottom-0 pb-0">
+            <h3 class="modal-title fw-600" id="faqTitle">FAQ</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><span class="icon-close lead-2"></span></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="accordion-2" class="accordion accordion-mrd accordion-no-header accordion-arrow-right">
+              <div class="card">
+                <div id="collapse-2-1" class="order-2 collapse show" data-parent="#accordion-2">
+                  <div class="card-body">
+                    Ammbr supports a number of wallets provided you set them up for the Binance Smart Chain (BSC).
+                  </div>
+                </div>
+                <div class="card-header order-1">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapse-2-1">
+                      <span class="icon icon-chevron-down small-3"></span>
+                      What wallet can I use?
+                    </a>
+                  </h5>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapse-2-2" class="order-2 collapse" data-parent="#accordion-2">
+                  <div class="card-body">
+                    You will earn AMR tokens at the APR rates quoted. These will automatically adjust to market conditions.
+                  </div>
+                </div>
+                <div class="card-header order-1">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapse-2-2" class="collapsed">
+                      <span class="icon icon-chevron-down small-3"></span>
+                      What do I earn for staking my assets in liquidity pools?
+                    </a>
+                  </h5>
+                </div>
+              </div>
+              <div class="card">
+                <div id="collapse-2-3" class="order-2 collapse" data-parent="#accordion-2">
+                  <div class="card-body">
+                    We charge 0.10BNB for minting NFTs.
+                  </div>
+                </div>
+                <div class="card-header order-1">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapse-2-3" class="collapsed">
+                      <span class="icon icon-chevron-down small-3"></span>
+                      What fees are payable for creating NFTs on Ammbr?
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.faq-modal -->
+
+    <!-- preloader -->
+    <div class="preloaderWrapper"><div class="loader"></div></div>
+    <!-- /.preloader -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- [ plugins ] -->
+    <!-- parallax -->
+    <script src="assets/plugins/parallax/simpleParallax.min.js"></script>
+    <!-- aos -->
+    <script src="assets/plugins/aos/aos.js"></script>
+
+    <!-- User JS -->
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js" id="_mainJS" data-plugins="load"></script>
+  </body>
+</html>
